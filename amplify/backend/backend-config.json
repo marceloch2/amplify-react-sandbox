@@ -64,6 +64,14 @@
       "dataSourceIntendedUse": "Storage",
       "pricingPlan": "RequestBasedUsage",
       "accessType": "AuthorizedUsers"
+    },
+    "mapa618912f": {
+      "isDefault": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Map",
+      "mapStyle": "VectorEsriDarkGrayCanvas",
+      "pricingPlan": "RequestBasedUsage",
+      "accessType": "AuthorizedAndGuestUsers"
     }
   }
 }

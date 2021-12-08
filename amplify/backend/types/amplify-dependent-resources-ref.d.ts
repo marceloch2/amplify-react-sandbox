@@ -22,6 +22,12 @@ export type AmplifyDependentResourcesAttributes = {
             "Name": "string",
             "Region": "string",
             "Arn": "string"
+        },
+        "mapa618912f": {
+            "Name": "string",
+            "Style": "string",
+            "Region": "string",
+            "Arn": "string"
         }
     }
 }
