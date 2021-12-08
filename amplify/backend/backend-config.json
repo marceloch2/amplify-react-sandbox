@@ -9,12 +9,18 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 30,
-              "description": "This is an api key"
+              "description": "api key description"
             }
           },
           "additionalAuthenticationProviders": [
             {
               "authenticationType": "AWS_IAM"
+            },
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authsandbox"
+              }
             }
           ]
         }
@@ -47,6 +53,17 @@
           "EMAIL"
         ]
       }
+    }
+  },
+  "geo": {
+    "placeindex31551a26": {
+      "isDefault": true,
+      "providerPlugin": "awscloudformation",
+      "service": "PlaceIndex",
+      "dataProvider": "Esri",
+      "dataSourceIntendedUse": "Storage",
+      "pricingPlan": "RequestBasedUsage",
+      "accessType": "AuthorizedUsers"
     }
   }
 }

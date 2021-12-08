@@ -16,5 +16,12 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientIDWeb": "string",
             "AppClientID": "string"
         }
+    },
+    "geo": {
+        "placeindex31551a26": {
+            "Name": "string",
+            "Region": "string",
+            "Arn": "string"
+        }
     }
 }

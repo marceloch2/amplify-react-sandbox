@@ -1,7 +1,13 @@
+type Award @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  AwardTodos: [Todo] @manyToMany(relationName: "AwardTodo")
+}
 
-  type Todo @model @auth(rules: [{allow: public}]) {
-      id: ID!
-      name: String!
-      description: String
-  }
-  
+type Todo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  description: String
+  awards: [Award] @manyToMany(relationName: "AwardTodo")
+}
+ 

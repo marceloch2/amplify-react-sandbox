@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Amplify } from 'aws-amplify'
 
+import Map from './ui-components/Map'
+
 import {
   createTheme,
   defaultTheme,
@@ -57,6 +59,7 @@ export default function App() {
         </ToggleButtonGroup>
         <Text>Current color mode: {colorMode}</Text>
       </Card>
+      <Map />
       <Authenticator>
         {({ signOut, user }) => (
           <main>

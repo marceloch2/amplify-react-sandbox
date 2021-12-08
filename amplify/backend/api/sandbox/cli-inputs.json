@@ -3,15 +3,19 @@
   "serviceConfiguration": {
     "apiName": "sandbox",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/tmp/amplify-af64ead8-baa5-4fca-aaf7-1d00f028536f/amplify/backend/api/sandbox/schema.graphql",
+    "gqlSchemaPath": "/tmp/amplify-8c0fa2f1-7fa4-4c08-8d1f-662ef7dfa3a7/amplify/backend/api/sandbox/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "keyDescription": "This is an api key",
+      "keyDescription": "api key description",
       "expirationTime": 30
     },
     "additionalAuthTypes": [
       {
         "mode": "AWS_IAM"
+      },
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authsandbox"
       }
     ],
     "conflictResolution": {
